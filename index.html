@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+     <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+    <title>MyAdmin</title>
+  </head>
+
+  <body>
+    <section>
+        <div>
+            <nav class="blue">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="" class="brand-logo white-text">MyAdmin</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="index.html" class="white-text">Dashboards</a>
+                            </li>
+                            <li>
+                                <a href="post.html" class="white-text">Posts</a>
+                            </li>
+                            <li>
+                                <a href="category.html" class="white-text">Categories</a>
+                            </li>
+                            <li>
+                                <a href="comment.html" class="white-text">Comments</a>
+                            </li>
+                            <li>
+                                <a href="user.html" class="white-text">Users</a>
+                            </li>
+                            
+                        </ul>
+                        <div class="right">
+                            <button data-target="slide-out" class=" btn blue sidenav-trigger hide-on-large"><i class="fas fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <ul id="slide-out" class="sidenav">
+            <li style="background-image: url(bird.jpg);"><div class="user-view">
+              <div class="background">
+                <img src="" alt="">
+              </div>
+              <a href="#user"><img class="circle" src="snap.jpg" style="width: 200px; height: 300px;"></a>
+              <a href="#name"><span class="white-text name">Daouda Hassiatou</span></a>
+              <a href="#email"><span class="white-text email">hassiatou.enikoy@codeloccol.org</span></a>
+            </div></li>
+            <li><a href="#!"><i class="fab fa-microsoft"></i>Dashboards</a></li>
+            <li>
+                <a href="post.html">Posts</a>
+            </li>
+            <li>
+                <a href="category.html.html">Categories</a>
+            </li>
+            <li>
+                <a href="comment.html">Comments</a>
+            </li>
+            <li>
+                <a href="user.html">Users</a>
+            </li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Account control</a></li>
+            <li><a class="waves-effect" href="#!">Logout</a></li>
+          </ul>
+      </section>
+
+      <section>     
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="fas fa-plus"></i>
+            </a>
+        <ul>
+            <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal1"><i class="fas fa-pen"></i></a></li>
+            <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal2"><i class="fas fa-folder"></i></a></li>
+            <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal3"><i class="fas fa-user-friends"></i></a></li>
+        </ul>
+        </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                      <h4>Add Post</h4>
+                        <input type="text" style="width: 99%;" class="rounded border mx-auto" placeholder="Title">
+                        <p class="mt-2 pl-4">Category</p>
+                        <input type="text" style="width: 99%;" class="rounded border mx-auto" placeholder="Select Option">
+                    <div id="editor">
+                        <p>This is some sample content.</p>
+                    </div>
+                    <a href="" class="btn blue right" style="margin-bottom: 1rem; margin-top: 3rem;">SUBMIT</a>
+            </div>
+          </div>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Add Category</h4>
+                <input type="text" style="width: 99%;" class="rounded border mx-auto" placeholder="Title">
+                <a href="" class="btn blue right" style="margin-bottom: 1rem; margin-top: 3rem;">SUBMIT</a>
+            </div>
+          </div>
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4>Add User</h4>
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Name">
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Email">
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Password">
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Confirm Password">
+                <a href="" class="btn blue right" style="margin-bottom: 1rem; margin-top: 3rem;">SUBMIT</a>
+            </div>
+          </div>
+        
+      </section>
+
+      <section style="padding-top: 3rem;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12 l3">
+                 <div class="card-panel blue white-text" style="text-align: center;">
+                     <div ><i class="fas fa-laugh fa-4x"></i></div>
+                     <h5>Monthly Visitors</h5>
+                     <h4>35900</h4>
+                     <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                     </div>
+                </div>
+                <div class="col s12 l3">
+                 <div class="card-panel" style="text-align: center;">
+                     <div ><i class="fas fa-pen fa-4x"></i></div>
+                     <h5>Blogs Post</h5>
+                     <h4>35900</h4>
+                     <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                     </div>
+                </div>
+                <div class="col s12 l3">
+                 <div class="card-panel blue white-text" style="text-align: center;">
+                     <div><i class="fas fa-comment-alt fa-4x"></i></div>
+                     <h5>Comments</h5>
+                     <h4>35900</h4>
+                     <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                     </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="card-panel" style="text-align: center;">
+                        <div><i class="fas fa-user-friends fa-4x"></i></div>
+                        <h5>Users</h5>
+                        <h4>35900</h4>
+                        <div class="progress">
+                            <div class="determinate white-text" style="width: 70%"></div>
+                        </div>
+                        </div>
+                   </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid blue lighten-2" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="row">
+                <div class="col l7 s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l5 s12 white">
+                    <h3>Latest Comments</h3>
+                    <div class="divider"></div>
+                       <div class="section" style="display: flex;">
+                        <div><img src="Avatar6.png" alt="" style="border-radius: 50% 50%; width: 60%;"></div>
+                        <div>
+                        <h5>Daouda Hassiatou</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate numquam exercitationem dol...</p>
+                        <p><span style="color: green; border-right: black 2px solid; padding-right: 4px;">Approve</span> <span style="color: red;">Deny</span></p>
+                        </div>  
+                    </div>
+                    <div class="divider"></div>
+                    <div class="section" style="display: flex;">
+                        <div><img src="Avatar1.png" alt="" style="border-radius: 50% 50%; width: 60%;"></div>
+                        <div>
+                        <h5>Hayat Kadri</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate numquam exercitationem dol...</p>
+                        <p><span style="color: green; border-right: black 2px solid; padding-right: 4px;">Approve</span> <span style="color: red;">Deny</span></p>
+                        </div>    
+                    </div>
+                    <div class="divider"></div>
+                    <div class="section" style="display: flex;">
+                        <div><img src="Avatar8.png" alt="" style="border-radius: 50% 50%; width: 60%;"></div>
+                        <div>
+                        <h5>Haoua Idrissa</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate numquam exercitationem dol...</p>
+                        <p><span style="color: green; border-right: black 2px solid; padding-right: 4px;">Approve</span> <span style="color: red;">Deny</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: rgb(233, 231, 231); padding-top: 2rem; padding-bottom: 2rem;" >
+        <div class="container-fluid" style="padding-top: 0rem; padding-bottom: 4rem;">
+            <div class="row">
+                <div class="col l7 s12">
+                <div class="card-panel">
+                        <h4>Recent Posts</h4>
+                        <table >
+                            <tr style="border-bottom: rgb(211, 211, 211) 2px solid;">
+                                <td><h5>Title</h5></td>
+                                <td><h5>Categories</h5></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color: rgb(197, 195, 195)">
+                                <td>Post One</td>
+                                <td>Web development</td>
+                                <td><a href="" class="button btn blue"> DETAILS</a></td>
+                            </tr>
+                            <tr>
+                                <td>Post two</td>
+                                <td>graphic Design</td>
+                                <td><a href="" class="button btn blue"> DETAILS</a></td>
+                            </tr>
+                            <tr style="background-color: rgb(197, 195, 195)">
+                                <td>Post three</td>
+                                <td>Web development</td>
+                                <td><a href="" class="button btn blue"> DETAILS</a></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+                
+                <div class="col l5 s12">
+                    <div class="card-panel">
+                        <div>
+                            <h4>Quick Todos</h4>
+                            <input type="text" placeholder="Add Todo...">
+                            <div style="margin-top: 3rem;">
+                                <div style="display: flex; justify-content: space-between; border: rgb(150, 147, 147) 1.5px solid; padding-left: 2rem; padding-right: 2rem; padding-top: 1rem; padding-bottom: 1rem;">
+                                    <div>
+                                        Todo One
+                                    </div>
+                                    <div><i class="fas fa-times" style="color: green;"></i></div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; border: rgb(150, 147, 147) 1.5px solid; padding-left: 2rem; padding-right: 2rem; padding-top: 1rem; padding-bottom: 1rem;">
+                                    <div>
+                                        Todo Two
+                                    </div>
+                                    <div><i class="fas fa-times" style="color: green;"></i></div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="blue" style="padding-top: 1rem; padding-bottom: 1rem;">
+        <p class="white-text" style="text-align: center;">MyAdmin Codeloccol Copyright © 2020</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $('.modal').modal();
+        });
+    </script>
+              
+    <script>
+        $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+    </script>
+
+    <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+        let massPopChart = new Chart(myChart, {
+            type:'line',
+            data:{
+                labels:['1','2','3','4','5','6','7','8','9','10'],
+                datasets:[{
+                    label:'Populations',
+                    data:[
+                        450,
+                        400,
+                        540,
+                        460,
+                        450,
+                        500,
+                        470,
+                        400,
+                        500,
+                        470,
+                        520
+                    ]
+                }]
+            },
+            options:{
+                title:{
+                    display:true,
+                    text:'Daily Visitors',
+                    fontSize: 25,
+                },
+                legend:{
+                    display:false,
+                }
+            }
+        });
+    </script>
+  </body>
+  </html>
