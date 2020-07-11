@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css" rel="stylesheet">
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jqvmap.css?100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/flag-icon.min.css?100" rel="stylesheet">
+    <!-- Materialize-->
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?100" rel="stylesheet">
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <title>myAdmin</title>
+</head>
+<body>
+            <!-- navbar -->
+
+    <header class="blue">
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper blue">
+                <div class="container">
+                    <a href="index.html" class="brand-logo">MYadmin</a>
+                    <a href="#" data-target="mobile-menu" class="sidenav-trigger" style="position: absolute; right: 0;">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="active" href="index.html">Dashboard</a></li>
+                        <li><a href="posts.html">posts</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="users.html">Comments</a></li>
+                        <li><a href="comments.html">Users</a></li>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="sidenav grey lighten-2" id="mobile-menu">
+            <div class="card">
+                <div class="card-content bgCard">
+                    <img height="100" width="50" src="https://tse4.mm.bing.net/th?id=OIP.qCE8WqSKUGEART7xPl8O9QHaE4&pid=Api&P=0&w=259&h=172" class="circle" alt="">
+                    <h6 class="white-text">Daouda Enikoy Hassiatou</h6>
+                    <h6 class="white-text">hassiatou.enikoy@codeloccol.org</h6>
+                </div>
+                <div class="">
+                    <ul>
+                        <li><a class="active" href="index.html">
+                            <i class="fa fa-th" aria-hidden="true"></i>
+                            Dashboard
+                        </a></li>
+                        <li><a href="posts.html">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            posts
+                        </a></li>
+                        <li><a href="categories.html">
+                            <i class="fa fa-folder" aria-hidden="true"></i>
+                            Categories
+                        </a></li>
+                        <li><a href="users.html">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            Users
+                        </a></li>
+                        <li><a href="comments.html">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            Comments
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<section class="section ">
+    <div class="row container">
+        <div class="col s12 m12 card white">
+            <h6>Posts</h6>
+            <table class="striped responsive-table post">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Catégorie</th>
+                    <th>date Posted</th>
+                    <th></th>
+                </tr>
+                </thead>
+        
+                <tbody>
+                <tr>
+                    <td>Post One</td>
+                    <td>Graphique Design</td>
+                    <td>01.01.1999</td>
+                    <td><button class="blue lighten-3 btnDetails white-text">Details</button></td>
+                </tr>
+                <tr>
+                    <td>Post Two</td>
+                    <td>Jellybean</td>
+                    <td>01.01.1999</td>
+                    <td><button class="blue lighten-3 btnDetails white-text">Details</button></td>
+                </tr>
+                <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>01.01.1999</td>
+                    <td><button class="blue lighten-3 btnDetails white-text">Details</button></td>
+                </tr>
+
+                <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>01.01.1999</td>
+                    <td><button class="blue lighten-3 btnDetails white-text">Details</button></td>
+                </tr>
+
+                <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>01.01.1999</td>
+                    <td><button class="blue lighten-3 btnDetails white-text">Details</button></td>
+                </tr>
+                </tbody>
+
+            </table>
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="page-footer blue lighten-2">
+    <div class="container">
+        <div class="row">
+            <h6 class="white-text center">MyAdmin CodeLoccol Copyrith @ 2019</h6>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+<script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.js?100"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+        
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#editor").editor();
+});
+</script>
+<!-- ChartJS -->
+
+<script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.Financial.js?100"></script>
+<script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/masonry.pkgd.min.js?100"></script>
+
+<!-- Initialization script -->
+<script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/dashboard.min.js?100"></script>
+
+
+
+</body>
+</html>
